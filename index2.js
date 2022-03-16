@@ -138,20 +138,4 @@ atualizarReceita(
   false
 );
 
-const atualizaReceita = (id, receitaAtualizada) => {
-  foiatualizada = false;
-  receitas.forEach((receita) => {
-    if (receita.identificador != id) {
-      return;
-    }
-    receita.titulo = receitaAtualizada.titulo;
-    receita.ingredientes = receitaAtualizada.ingredientes;
-  });
-  if (!foiatualizada) {
-    console.log("não foi encontrado o id informado");
-  }
-};
-
-atualizaReceita(1, { titulo: "dogao" });
-
 console.log(receitas);
